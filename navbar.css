@@ -57,8 +57,48 @@
 .navbar-shop,
 .navbar-user {
     font-size: 30px;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
+
+.fa-circle-user{
+    color:var(--color3);
+}
+
+/*Dropdown*/
+
+.dropdown{
+    position: relative;
+    
+    
+}
+
+.dropdown ul{
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden ;
+    list-style: none;
+    margin: 23px 75px 0 0 ;
+    background-color: var(--color1);
+}
+
+.links{
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: bold;
+    
+}
+
+.links:hover{
+    color: var(--color4);
+}
+.dropdown ul.show{
+    max-height: 500px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+
+
 
 .navbar-count {
     min-width: 20px;
