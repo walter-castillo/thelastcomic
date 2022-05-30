@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="modaLogin.css">
     <title>TheLastComic</title>
 </head>
 
@@ -30,14 +31,56 @@
 
             <div class="navbar-content-shop-user">
                 <span class="navbar-content-shop">
-                    <i class="fa-solid fa-cart-shopping navbar-shop"></i>
+                    <!-- ANEXO -->
+                    <i class="fa-solid fa-cart-shopping navbar-shop"></i> 
+                    <!-- ANEXO -->
                     <div class="navbar-count">0</div>
                 </span>
 
-                <span> <i class="fa-solid fa-circle-user navbar-user"></i></span>
+                <span> 
+                  <a href="#" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#inicioSesion">
+                    <i class="fa-solid fa-circle-user navbar-user"></i>
+                  </a>
+                  
+                </span>
             </div>
         </nav>
     </header>
+
+    <div class="modal fade" id="inicioSesion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog mx-auto">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title text-center mx-auto" id="staticBackdropLabel">The Last Comic</h5>
+            <button type="button" class="btn-close mx-0 p-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-2">
+                <label for="exampleInputUser" class="form-label">Usuario </label>
+                <input type="email" class="form-control" id="exampleInputUser" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-2">
+                <label for="exampleInputEmail1" class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-2">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-2 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recordar</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn mx-auto">Iniciar Sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main class="main-index container">
         <div class="banner-principal">
         </div>
@@ -46,8 +89,6 @@
             <!-- aqui van las card -->
         </div>
     </main>
-
-
 
 
     <footer class="footer">
